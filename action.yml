@@ -1,0 +1,18 @@
+name: "Compile Typescript"
+description: "compiles uncompiled typescript and creates a new commit"
+author: "Rebble69"
+
+inputs:
+  user-email:
+    description: "email to create new commit"
+    required: true
+  user-name:
+    description: "name to create new commit"
+    required: true
+  message:
+    description: "message to commit on new commit"
+    required: true
+
+runs:
+  using: "node17"
+  main: "src/index.js"
